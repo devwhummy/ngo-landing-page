@@ -1,0 +1,288 @@
+
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    /* color */
+    --accent-color: #37447e;
+    
+    --primary-color: #219653;
+    --primary-light-color: #e7ffe9;
+
+    --secondary-color: #6e7491;
+}
+
+html, body {
+    padding: 0;
+    margin: 0;
+}
+
+p {
+    line-height: 1.5;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.btn {
+    padding: 8px 20px;
+    background-color: grey;
+    border: 2px solid grey;
+    color: white;
+    cursor: pointer;
+    border-radius: 2px;
+    font-size: 16px;
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.btn-outline {
+    background-color: transparent;
+    border-color: var(--primary-color);
+    color: var(--primary-color);
+}
+
+
+.page {
+    /* padding: 0 5rem; */
+}
+
+.hor-pad {
+    padding-left: 5rem;
+    padding-right: 5rem;
+}
+
+/* Navigation */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ul {
+    padding: 0;
+    opacity: 0.7;
+    font-size: 14px;
+}
+
+ul li {
+    display: inline;
+    list-style-type: none;
+    padding-right: 18px;
+}
+
+ul li a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+.title {
+    color: var(--accent-color);
+    font-weight: 900;
+}
+
+nav .btn {
+    padding: 10px;
+}
+
+
+/* Header/Hero Section */
+.header {
+    display: flex;
+    justify-content: space-between;
+    margin: 5rem 0;
+}
+
+.header h1 {
+    color: var(--primary-color);
+    font-size: 2.5rem;
+    line-height: 1.2;
+}
+
+.header p {
+    text-align: justify;
+    padding-bottom: 25px;
+}
+
+.header .content {
+    margin-right: 60px;
+}
+
+.header .btn {
+    width: 190px;
+    margin-right: 36px;
+}
+
+.hero-quote {
+    text-align: center;
+    color: var(--primary-color);
+    font-weight: 600;
+    font-size: 30px;
+}
+
+/* Help Us Section */
+
+.center, .side {
+    display: flex;
+    justify-content: space-between;
+    text-align: justify;
+}
+
+.center > div {
+    /* padding-left: 3.5rem; */
+}
+
+.center .second-image {
+    width: 500px;
+}
+
+.side .logo p {
+    font-size: 13px;
+    margin-top: -15px;
+}
+
+.center-images h4 {
+    color: var(--secondary-color);
+}
+
+.images img {
+    border-radius: 5px;
+}
+
+.sidebar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5rem 0;
+}
+
+.sidebar .text {
+    text-align: justify;
+}
+
+.sidebar > div {
+    /* padding-right: 5rem; */
+}
+
+.text h3 {
+    color: var(--primary-color);
+}
+
+.contribution-section {
+    text-align: center;
+    margin: 5rem 20rem;
+}
+
+.contribution-section p {
+    font-size: 13px;
+}
+
+.digit {
+    color: var(--primary-color);
+    margin-bottom: 50px;
+}
+
+.digit h1 {
+    font-size: 30px;
+    margin-bottom: -10px;
+}
+
+.contribution-section .btn {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 5px 3rem;
+    margin-top: 5px;
+    border: 0;
+}
+
+.main-footer {
+    background-color: var(--primary-light-color);
+    /* background: url(./images/hero-bg.png); */
+}
+
+.footer-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-head .name {
+    color: var(--primary-color);
+}
+
+.footer-head .btn {
+    background-color: var(--primary-color);
+    color: white;
+    /* padding: 5px 2rem; */
+    margin-top: 5px;
+    border: 0;
+}
+
+.footer-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.social .logo {
+    width: 15px;
+    filter: grayscale(5);
+}
+
+.social img {
+    margin-left: 10px;
+}
+
+.logo img {
+    width: 2rem;
+    filter: grayscale(5);
+    margin-bottom: -15px;
+}
+
+.center .logo {
+    padding: 0 25px 0 0;
+    width: 50%;
+}
+
+.new {
+    /* background: url(./images/hero-bg.png); */
+}
+
+@media screen and (max-width: 600px) {
+    nav,
+    .header,
+    .center, 
+    .side,
+    .sidebar,
+    .footer-head,
+    .footer-nav {
+        flex-direction: column;
+    }
+
+    .page {
+        margin: 0 5px;
+    }
+
+    .center {
+        margin: 0;
+    }
+
+    .center > div {
+        padding-left: 0;
+    }
+
+    .contribution-section {
+        text-align: center;
+        margin: 0;
+    }
+
+    .side .logo {
+        width: 100%;
+    }
+}
+

@@ -8,7 +8,7 @@
     --accent-color: #37447e;
     
     --primary-color: #219653;
-    --primary-light-color: #e7ffe9;
+    --primary-light-color: #cef8d2;
 
     --secondary-color: #6e7491;
 }
@@ -272,11 +272,17 @@ nav .btn {
 
 .contribution-section {
     text-align: center;
-    margin: 5rem 20rem;
+    padding: 5rem 20rem;
+    background-color: #edfcee;
 }
 
 .contribution-section p {
-    font-size: 13px;
+    font-size: 14px;
+}
+
+.contribution-section h3 {
+    font-size: 2rem;
+    color: black;
 }
 
 .digit {
@@ -285,7 +291,7 @@ nav .btn {
 }
 
 .digit h1 {
-    font-size: 30px;
+    font-size: 2.75rem;
     margin-bottom: -10px;
 }
 

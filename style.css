@@ -19,7 +19,7 @@ html, body {
 }
 
 p {
-    line-height: 1.5;
+    line-height: 1.6;
 }
 
 body {
@@ -55,6 +55,10 @@ body {
 .hor-pad {
     padding-left: 5rem;
     padding-right: 5rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: var(--primary-color);
 }
 
 /* Navigation */
@@ -126,28 +130,44 @@ nav .btn {
 }
 
 /* Help Us Section */
-
-.center, .side {
+.help-us .content {
+    margin-right: 60px;
+}
+.help-us, .tips{
     display: flex;
     justify-content: space-between;
     text-align: justify;
 }
 
-.center > div {
-    /* padding-left: 3.5rem; */
+.help-us .content h3 {
+    font-size: 2rem;
 }
 
-.center .second-image {
+.help-us .second-image {
     width: 500px;
 }
 
-.side .logo p {
-    font-size: 13px;
-    margin-top: -15px;
+
+.help-us-images h4 {
+    color: var(--secondary-color);
 }
 
-.center-images h4 {
-    color: var(--secondary-color);
+
+.help-us .logo {
+    padding: 0 25px 0 0;
+    width: 50%;
+}
+
+.help-us .logo img {
+    width: 48px;
+    filter: grayscale(5);
+    margin-bottom: -15px;
+}
+
+
+.tips.logo p {
+    font-size: 13px;
+    margin-top: -15px;
 }
 
 .images img {
@@ -238,17 +258,6 @@ nav .btn {
     margin-left: 10px;
 }
 
-.logo img {
-    width: 2rem;
-    filter: grayscale(5);
-    margin-bottom: -15px;
-}
-
-.center .logo {
-    padding: 0 25px 0 0;
-    width: 50%;
-}
-
 .new {
     /* background: url(./images/hero-bg.png); */
 }
@@ -256,7 +265,7 @@ nav .btn {
 @media screen and (max-width: 600px) {
     nav,
     .header,
-    .center, 
+    .help-us, 
     .side,
     .sidebar,
     .footer-head,
@@ -268,11 +277,11 @@ nav .btn {
         margin: 0 5px;
     }
 
-    .center {
+    .help-us {
         margin: 0;
     }
 
-    .center > div {
+    .help-us > div {
         padding-left: 0;
     }
 
@@ -281,7 +290,7 @@ nav .btn {
         margin: 0;
     }
 
-    .side .logo {
+    .tips.logo {
         width: 100%;
     }
 }

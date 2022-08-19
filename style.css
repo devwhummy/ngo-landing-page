@@ -170,8 +170,78 @@ nav .btn {
     margin-top: -15px;
 }
 
-.images img {
-    border-radius: 5px;
+/* Trending Fundraisers Section */
+.trending-fundraisers {
+    padding: 20px
+}
+
+.trending-fundraisers h4 {
+    color: var(--secondary-color);
+}
+
+.trending-fundraisers p {
+    color: var(--primary-color);
+}
+
+.trending-fundraisers .topbar {
+    display: flex;
+    justify-content: space-between;
+}
+
+.trending-fundraisers .fund-cards {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    /* grid-template-columns: repeat(3, 1fr); */
+    /* column-gap: 30px; */
+}
+
+.card {
+    margin-right: 30px;
+    box-shadow: 0px 0 10px #00000022;
+    box-sizing: border-box;
+    border-radius: 8px;
+    width: 33.3%;
+}
+
+/* I will check why this is not working */
+.fund-cards:last-child {
+    margin-right: 0;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 8px 8px 0 0;
+}
+
+.card-info {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.card-title {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-title .main {
+    font-weight: 500;
+}
+
+.card-title .amount {
+    color: black;
+}
+
+.card-subtitle {
+    color: var(--primary-color);
+    font-weight: 300;
+    font-size: 14px;
+    padding: 4px 0;
+}
+
+.card-rating {
+    font-weight: 600;
 }
 
 .sidebar {

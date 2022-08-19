@@ -244,23 +244,30 @@ nav .btn {
     font-weight: 600;
 }
 
-.sidebar {
+.donate {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin: 5rem 0;
 }
 
-.sidebar .text {
+.donate .donate-info-1 {
     text-align: justify;
+    margin-left: 60px;
 }
 
-.sidebar > div {
+.donate .donate-info-2 {
+    text-align: justify;
+    margin-right: 60px;
+}
+
+.donate {
     /* padding-right: 5rem; */
 }
 
-.text h3 {
+.donate-info h3 {
     color: var(--primary-color);
+    font-size: 2rem;
 }
 
 .contribution-section {
@@ -337,7 +344,7 @@ nav .btn {
     .header,
     .help-us, 
     .side,
-    .sidebar,
+    .donate,
     .footer-head,
     .footer-nav {
         flex-direction: column;
